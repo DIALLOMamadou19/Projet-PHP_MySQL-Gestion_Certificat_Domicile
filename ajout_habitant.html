@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'inscription habitant</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    
+    <div id="menu_wrapper">
+        <div id="menu">
+            <ul>
+                <li><a href="accueil.php" ><strong> Accueil</strong></a></li>
+                <li><a href="ajout_habitant.html" ><strong> Ajouter habitant</strong></a></li>
+                <li><a href="script_affiche_quartier.php" ><strong> Afficher quartiers</strong></a></li>
+                <li><a href="renseignement_certificat.html" ><strong> Générer certificat de domicile</strong></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+<strong id="id"></strong>
+<hr width="250px">
+<hr width="250px">
+<br>
+    <fieldset>
+        <form action="script_ajout_habitant.php" method="POST">
+            <h1 align="center">Ajouter un habitant</h1>
+            <table align="center">
+                <tr>
+                    <td>
+                        <input type="text" name="CIN" size="25" placeholder="CIN" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="nom" size="25" placeholder="Nom" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="prenom" size="25" placeholder="Prenom" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Date naissance</label>
+                        <input type="date" name="DATENAISSANCE" size="25" placeholder="Date de naissance" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="LIEUNAISSANCE" size="25" placeholder="Lieu de naissance" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="SEXE" size="25" placeholder="Sexe" required>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <button type="submit">Ajouter</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

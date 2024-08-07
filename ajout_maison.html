@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'ajout de maison</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    
+    <div id="menu_wrapper">
+        <div id="menu">
+            <ul>
+                <li><a href="accueil.php" ><strong> Accueil</strong></a></li>
+                <li><a href="script_affiche_quartier.php" ><strong> Afficher quartiers</strong></a></li>
+                <li><a href="renseignement_certificat.html" ><strong> Générer certificat de domicile</strong></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+<strong id="id">QUARTIERS</strong>
+<hr width="250px">
+<hr width="250px">
+<br>
+
+    <fieldset>
+        <form action="script_ajout_maison.php" method="POST">
+            <h1 align="center">Ajouter une maison</h1>
+            <table align="center">
+                <tr>
+                    <td>
+                        <input type="number" name="numero" size="25" placeholder="Numero du maison " min="0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="idquartier" size="25" placeholder="ID du quartier" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="CIN" size="25" placeholder="CIN du proprietaire" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="superficie" size="25" placeholder="Superficie de la maison" required>
+                    </td>
+                </tr>
+                
+                
+                <tr>
+                    <td>
+                        <button type="submit">Ajouter</button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>
